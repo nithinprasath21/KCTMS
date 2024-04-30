@@ -1,22 +1,13 @@
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <h1>Inter KCT Tournament Management System (KCTMS)</h1>
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+        The Tournament Management System is a standalone web application. It interacts with users through a web-based interface and stores data in a relational database. The system may interface with external services for authentication and payment processing
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
       </header>
     </div>
   );
