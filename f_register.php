@@ -30,7 +30,7 @@ if(!$_SESSION["matchname"]){
 </div>
 Players:
 <?php 
-for($i=1;$i<3;$i++){
+for($i=1;$i<=11;$i++){
  echo  "<div>
         <input type='text' placeholder='name$1' name='name$i' required>
        </div>";
@@ -50,7 +50,7 @@ $match=$_SESSION["matchname"];
     $result=mysqli_query($connection,"select * from football_register where team='$team';");
     $count=mysqli_num_rows($result);
 if($count==0){
-for($i=1;$i<3;$i++){
+for($i=1;$i<=11;$i++){
     $name=$_POST["name$i"];
     $sql="insert into football_register (team,name,college,matchname) values ('$team','$name','$college','$match');";
     mysqli_query($connection,$sql);
