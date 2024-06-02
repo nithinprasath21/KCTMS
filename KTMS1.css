@@ -1,0 +1,25 @@
+*{
+    text-decoration:none;
+}
+
+.basketball{
+    background-color: rgb(196, 155, 113);
+    border:none;
+    cursor:pointer;
+}
+.badminton{
+    background-color: rgb(98, 180, 188);
+    border:none;
+    cursor:pointer;
+}
+.football{
+    background-color: rgb(177, 229, 74);
+    border:none;
+    cursor:pointer;
+}
+.volleyball{
+    background-color: rgb(210, 90, 66);
+    border:none;
+    cursor:pointer;
+}
+
