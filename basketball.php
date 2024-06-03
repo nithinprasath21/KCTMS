@@ -19,7 +19,7 @@ session_start();
     <?php
      foreach($result as $a){
     ?>
-    <div style="background-color:aquamarine;">
+    <div style="background-color:red;">
        <?php echo $a["matchname"];?><br>
        <?php echo $a["venue"];?><br>
        <?php echo $a["time"];?><br><br>
