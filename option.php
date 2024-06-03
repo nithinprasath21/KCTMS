@@ -15,8 +15,6 @@
     <title>Document</title>
 </head>
 <body>
-
-      <a href="view.html"><h3><b>view profile</b></h3></a>
       <a href="KTMS.php"><h3><b>home</b></h3></a>
 <a href="down.php"><h3><b>download certificate</b></h3></a>
 <div style="width:100%;align-contents:right;background: transparent;border:2px solid rgba(255,255,255,.2);backdrop-filter: blur(20px);color:black;font-size: 50px;">
