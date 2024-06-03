@@ -23,7 +23,9 @@
 <img src="icon.png" alt="buttonpng" width="30" height="30"/>
 </button>
 </a>
-      
+<center>
+<h1>KCT Tournament Management</h1>
+   </center>
       <hr>
       <form action="<?php $_SERVER["PHP_SELF"] ?>" method="POST">
          <div >
@@ -43,6 +45,8 @@
          </div>
          <hr/>
       </form>
+      <center>
+      <p>Done by <br>Nikileshwar - 22BCS078, Nithin Prasath - 22BCS081, Pranesh - 22BCS086, Rajasekaran - 22BCS096</p></center>
       <script>
          let subMenu=document.getElementById("subMenu");
          function toggleMenu(){

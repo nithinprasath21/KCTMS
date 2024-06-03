@@ -29,7 +29,7 @@ if(!$_SESSION["matchname"]){
 </div>
 Players:
 <?php 
-for($i=1;$i<3;$i++){
+for($i=1;$i<=5;$i++){
  echo  "<div>
         <input type='text' placeholder='name$1' name='name$i' required>
        </div>";
@@ -49,7 +49,7 @@ $match=$_SESSION["matchname"];
     $result=mysqli_query($connection,"select * from basketball_register where team='$team';");
     $count=mysqli_num_rows($result);
 if($count==0){
-for($i=1;$i<3;$i++){
+for($i=1;$i<=5;$i++){
     $name=$_POST["name$i"];
     $sql="insert into basketball_register (team,name,college,matchname) values ('$team','$name','$college','$match');";
     mysqli_query($connection,$sql);
@@ -67,6 +67,17 @@ else{
 
 }
 ?>
-
+<form action="" method="POST">
+    <input type="submit" value="back" name="back">
+</form>
 </body>
 </html>
+<?php 
+
+        unset($_SESSION['matchname']);
+        if(isset($_POST["back"])):
+        header('Location:ktms.php');
+        die();
+        
+    endif;
+?>

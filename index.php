@@ -29,6 +29,9 @@
             <div style="padding-left:55px;">
                <button type="submit" class="btn" name="login">Login</button>
             </div>
+            <div style="padding-left:55px;">
+               <a href="register.php">New User???</a>
+            </div>
          </form>
       </div>
       <?php

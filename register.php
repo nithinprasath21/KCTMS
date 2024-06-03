@@ -5,7 +5,7 @@ include("database.php");
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
+<link rel="stylesheet" href="loginstyle.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
@@ -16,6 +16,7 @@ include("database.php");
 <body class="login">
     <div class="form">
 <form action="<?php $_SERVER["PHP_SELF"] ?>" method="post">
+<h3>Sign Up</h3>
 <div class="in">
         <input type="email" placeholder="email" name="email" required><br>
 </div>
@@ -27,9 +28,12 @@ include("database.php");
 		<input type="password" placeholder="password" name="password" required><br>
         </div>
         <div style="padding-left:55px;">
-		<button type="submit" class="btn" name="create" value="create">Create</button>
+            <button type="submit" class="btn" name="create" value="create">Create</button>
         </div>
-        
+        <div style="padding-left:175px;padding-top:20px;width:200px;">
+			
+            Already have an account?<a  href="index.php">login</a>
+    </div>
 	</form>
     </div>
     <?php
@@ -68,9 +72,6 @@ include("database.php");
 
     }
     ?>
-    <div style="padding-left:175px;padding-top:20px;width:200px;">
-			
-            Already have an account?<a  href="index.php">login</a>
-    </div>
+    
 </body>
 </html>

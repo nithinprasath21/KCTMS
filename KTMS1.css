@@ -4,6 +4,8 @@
 
 .basketball{
     background-color: rgb(196, 155, 113);
+    width: 500px;
+    height: 500px;
     border:none;
     cursor:pointer;
 }

@@ -67,6 +67,17 @@ else{
 
 }
 ?>
-
+<form action="" method="POST">
+    <input type="submit" value="back" name="back">
+</form>
 </body>
 </html>
+<?php 
+
+        unset($_SESSION['matchname']);
+        if(isset($_POST["back"])):
+        header('Location:ktms.php');
+        die();
+        
+    endif;
+?>
